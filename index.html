@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>websocketd capitalize.py test</title>
+  <script src="src/socket_stuff.js"></script>
+  <style>
+    body {
+      background-color: gray;
+    }
+    body, body * {
+      box-sizing: border-box;
+    }
+    main {
+      position: fixed;
+      top: 10%;
+      right: 10%;
+      bottom: 10%;
+      left: 10%;
+      padding: 0.5em;
+      color: rgba(255, 255, 255, 0.8);
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #000;
+    }
+
+    #stdout {
+      width: 100%;
+      height: calc(100% - 2em);
+      overflow-y: scroll;
+      font-size: 1em;
+    }
+    #stdout p.buffer-line {
+      margin: 0.5em 0;
+    }
+
+    #stdin {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      height: 2em;
+      line-height: 2em;
+      color: white;
+    }
+    #stdin input {
+      flex-grow: 1;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1em;
+      color: white;
+      outline: none;
+      border: none;
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section id="stdout">
+      <!-- output will go here -->
+    </section>
+    <section id="stdin">
+      <span class="prompt">&gt;&nbsp;</span><input type="text" autofocus>
+    </section>
+  </main>
+</body>
+</html>
